@@ -1,10 +1,5 @@
-import { Button, Header } from "ui";
+import { GithubRepo } from "ui";
 
 export default function Page() {
-  return (
-    <>
-      <Header text="Web" />
-      <Button />
-    </>
-  );
+  return <GithubRepo id="birdgg/homebrew-affine" />;
 }
