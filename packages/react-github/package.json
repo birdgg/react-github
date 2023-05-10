@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@birdgg/react-github",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,9 @@
     ".": {
       "react-server": "./dist/index.js",
       "default": "./dist/index.client.js"
-    }
+    },
+    "./api": "./dist/api/index.js",
+    "./theme.css": "./dist/theme.css"
   },
   "files": [
     "dist/**/*.{js,d.ts,css}"
