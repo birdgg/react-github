@@ -1,7 +1,12 @@
 {
   "name": "@birdgg/react-github",
   "version": "0.0.1",
+  "repository": "https://github.com/birdgg/react-github.git",
+  "author": "birdgg",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/birdgg/react-github/issues"
+  },
   "scripts": {
     "build": "pnpm build:swc && pnpm types",
     "build:swc": "swc src -d dist --copy-files",
@@ -11,8 +16,7 @@
     "clean": "rm -rf dist && rm -rf .turbo"
   },
   "sideEffects": [
-    "./dist/GithubContainer.js",
-    "./dist/theme.css"
+    "./dist/GithubContainer.js"
   ],
   "type": "module",
   "exports": {
