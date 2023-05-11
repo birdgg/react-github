@@ -20,7 +20,7 @@ importers:
         specifier: ^1.9.3
         version: 1.9.3
 
-  apps/web:
+  apps/next-app:
     dependencies:
       '@birdgg/react-github':
         specifier: workspace:*
@@ -46,7 +46,7 @@ importers:
         version: 18.2.5
       '@types/react-dom':
         specifier: ^18.0.7
-        version: 18.2.3
+        version: 18.2.0
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.14(postcss@8.4.23)
@@ -808,12 +808,6 @@ packages:
 
   /@types/react-dom@18.2.0:
     resolution: {integrity: sha512-8yQrvS6sMpSwIovhPOwfyNf2Wz6v/B62LFSVYQ85+Rq3tLsBIG7rP5geMxaijTUxSkrO6RzN/IRuIAADYQsleA==}
-    dependencies:
-      '@types/react': 18.2.5
-    dev: true
-
-  /@types/react-dom@18.2.3:
-    resolution: {integrity: sha512-hxXEXWxFJXbY0LMj/T69mznqOZJXNtQMqVxIiirVAZnnpeYiD4zt+lPsgcr/cfWg2VLsxZ1y26vigG03prYB+Q==}
     dependencies:
       '@types/react': 18.2.5
     dev: true
