@@ -1,0 +1,29 @@
+.github-repo-embedded {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 16px;
+}
+
+.box {
+  background-color: var(--github-bg-color);
+  border: var(--github-border);
+  border-radius: 6px;
+  display: flex;
+  padding: 16px;
+  width: 100%;
+}
+
+.list-item-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--github-accent);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-weight: 600;
+  margin-right: 4px;
+  text-decoration: none;
+}

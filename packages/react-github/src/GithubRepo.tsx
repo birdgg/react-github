@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { getRepo } from "./api/github";
+import { GithubRepoEmbedded } from "./GithubRepoEmbedded";
 
 export type GithubRepoProps = {
   id: string;
@@ -18,7 +19,7 @@ const GithubRepoContent = async ({ id }: GithubRepoProps) => {
     return <p>github repo not found</p>;
   }
 
-  return <p>{repo.name}</p>;
+  return <GithubRepoEmbedded {...repo} />;
 };
 
 export const GithubRepo = (props: GithubRepoProps) => (
