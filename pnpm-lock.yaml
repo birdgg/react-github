@@ -68,9 +68,15 @@ importers:
 
   packages/react-github:
     dependencies:
+      '@primer/octicons-react':
+        specifier: ^19.1.0
+        version: 19.1.0(react@17.0.2)
       '@swc/helpers':
         specifier: ^0.4.14
         version: 0.4.14
+      clsx:
+        specifier: ^1.2.1
+        version: 1.2.1
       react-dom:
         specifier: '>= 18.0.0'
         version: 18.2.0(react@17.0.2)
@@ -345,6 +351,15 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.5.0
+    dev: false
+
+  /@primer/octicons-react@19.1.0(react@17.0.2):
+    resolution: {integrity: sha512-owWS3jHcsMOQMRzXURSnbqkkQCgmNOZWmm/vejzwnPU21m8Wz1Xng5i0pu1B/VuW7cmsNh5+r5XsVM8r1igY6A==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      react: '>=16.3'
+    dependencies:
+      react: 17.0.2
     dev: false
 
   /@rushstack/eslint-patch@1.2.0:
@@ -939,6 +954,11 @@ packages:
     dependencies:
       mimic-response: 1.0.1
     dev: true
+
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}

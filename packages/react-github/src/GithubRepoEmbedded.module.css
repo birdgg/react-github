@@ -1,29 +1,56 @@
-.github-repo-embedded {
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-bottom: 16px;
-}
-
-.box {
-  background-color: var(--github-bg-color);
-  border: var(--github-border);
-  border-radius: 6px;
-  display: flex;
-  padding: 16px;
-  width: 100%;
-}
-
-.list-item-content {
+.root {
   display: flex;
   width: 100%;
   flex-direction: column;
 }
 
+.titleContainer {
+  display: flex;
+}
+
+.repoIcon {
+  margin-right: 4px;
+}
+
+.description {
+  flex: 1;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 12px;
+  min-height: 40px;
+}
+
 .title {
   color: var(--github-accent);
+  font-size: 14px;
   word-break: break-word;
   overflow-wrap: break-word;
   font-weight: 600;
   margin-right: 4px;
   text-decoration: none;
+}
+
+.footer {
+  margin-top: 8px;
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 0;
+  gap: 8px;
+}
+
+.languageColor {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: var(--github-language-border);
+  border-radius: 50%;
+}
+
+.footerItem {
+  margin-right: 16px;
+  display: flex;
+  gap: 4px;
+  align-items: "center";
 }

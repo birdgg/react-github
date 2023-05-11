@@ -17,5 +17,11 @@ export async function getRepo(repo: string) {
       accept: "application/vnd.github+json",
     },
   });
-  return response.json() as Promise<Repo>;
+  const json = await response.json();
+
+  if (response.ok) {
+    return json as Repo;
+  }
+
+  throw new Error(`${repo} not found`);
 }

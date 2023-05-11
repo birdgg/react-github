@@ -10,6 +10,10 @@
     "lint": "TIMING=1 eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
     "clean": "rm -rf dist && rm -rf .turbo"
   },
+  "sideEffects": [
+    "./dist/GithubContainer.js",
+    "./dist/theme.css"
+  ],
   "type": "module",
   "exports": {
     ".": {
@@ -27,6 +31,17 @@
         "src/index"
       ],
       "*": []
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "typesVersions": {
+      "*": {
+        "index": [
+          "dist/index.d.ts"
+        ],
+        "*": []
+      }
     }
   },
   "peerDependencies": {
@@ -47,7 +62,9 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
+    "@primer/octicons-react": "^19.1.0",
     "@swc/helpers": "^0.4.14",
+    "clsx": "^1.2.1",
     "swr": "^2.1.5"
   }
 }
