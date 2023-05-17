@@ -7,10 +7,10 @@ import useSWR from "swr";
 import { getRepo } from "./api/github";
 
 interface Props {
-  id: string;
+  repo: string;
 }
-export function GithubRepo({ id }: Props) {
-  const { data, error, isLoading } = useSWR(id, async () => getRepo(id), {
+export function GithubRepo({ repo }: Props) {
+  const { data, error, isLoading } = useSWR(repo, async () => getRepo(repo), {
     revalidateIfStale: false,
     revalidateOnFocus: false,
     shouldRetryOnError: false,

@@ -6,23 +6,23 @@ import { GithubRepoSkeleton } from "./GithubRepoSkeleton";
 import { GithubRepoNotFound } from "./GithubRepoNotFound";
 
 export type GithubRepoProps = {
-  id: string;
+  repo: string;
   fallback?: ReactNode;
   onError?(error: any): any;
 };
 
-const GithubRepoContent = async ({ id }: GithubRepoProps) => {
-  const repo = id
-    ? await getRepo(id).catch((err) => {
+const GithubRepoContent = async ({ repo }: GithubRepoProps) => {
+  const repoData = repo
+    ? await getRepo(repo).catch((err) => {
         console.error(err);
       })
     : undefined;
 
-  if (!repo) {
+  if (!repoData) {
     return <GithubRepoNotFound />;
   }
 
-  return <GithubRepoEmbedded {...repo} />;
+  return <GithubRepoEmbedded {...repoData} />;
 };
 
 export const GithubRepo = ({
