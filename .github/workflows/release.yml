@@ -43,12 +43,11 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          # Builds the package and executes `changeset publish`
           publish: pnpm release
-          # Alias to `changeset version` script in package.json
           version: pnpm version-packages
           commit: "chore: update package versions"
           title: "chore: update package versions"
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
