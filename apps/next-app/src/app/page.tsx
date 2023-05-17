@@ -1,31 +1,23 @@
-import { useState } from "react";
+import { cookies } from "next/headers";
+import { GithubRepo } from "@birdgg/react-github";
 import { ClientRepos } from "../components/ClientRepos";
-import { ServerRepos } from "../components/ServerRepos";
+import { ThemeSwitcher } from "../components/ThemeSwitch";
+import { Theme } from "../types";
 
 export default function Page() {
-  return (
-    <div className="px-4 py-4">
-      <h2>Github Embedded</h2>
-      <div className="flex">
-        <div className="w-1/2">
-          <h3>Server Component</h3>
-          <div data-theme="light">
-            <ServerRepos />
-          </div>
-          <div data-theme="dark" className="bg-black">
-            <ServerRepos />
-          </div>
-        </div>
+  const theme = (cookies().get("theme")?.value ?? "light") as Theme;
 
-        <div className="w-1/2">
-          <h3>Client Component</h3>
-          <div data-theme="light">
-            <ClientRepos />
-          </div>
-          <div data-theme="dark" className="bg-black">
-            <ClientRepos />
-          </div>
-        </div>
+  return (
+    <div className="px-4 py-4 mx-auto max-w-screen-md">
+      <h1>Github Embedded</h1>
+      <ThemeSwitcher theme={theme} />
+      <div className="my-8">
+        <h2>You can use it as Server Component</h2>
+        <GithubRepo id="birdgg/react-github" />
+      </div>
+      <div className="my-8">
+        <h2>You can use it as Client Component</h2>
+        <ClientRepos />
       </div>
     </div>
   );

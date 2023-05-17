@@ -1,5 +1,5 @@
 .react-github-theme {
-  --github-container-margin: 8px;
+  --github-container-margin: 8px 0;
 }
 
 :is([data-theme="light"], .light) :where(.react-github-theme),
