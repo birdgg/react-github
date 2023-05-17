@@ -19,6 +19,5 @@ export function GithubRepo({ id }: Props) {
   if (isLoading) return <GithubRepoSkeleton />;
   if (error || !data) return <GithubRepoNotFound />;
 
-  // return <GithubRepoEmbedded {...data} />;
-  return <GithubRepoSkeleton />;
+  return <GithubRepoEmbedded {...data} />;
 }
