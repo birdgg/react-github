@@ -7,7 +7,7 @@ import { GithubContainer } from "./GithubContainer";
 import { languageColor } from "./language";
 
 function getLanuageColor(language: string) {
-  return languageColor[language] || "#000";
+  return languageColor[language].color || "#000";
 }
 
 export function GithubRepoEmbedded({
