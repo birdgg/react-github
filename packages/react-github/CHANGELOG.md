@@ -1,5 +1,11 @@
 # @birdgg/react-github
 
+## 0.2.1
+
+### Patch Changes
+
+- 7af491a: fix ci
+
 ## 0.2.0
 
 ### Minor Changes
