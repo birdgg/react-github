@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build && pnpm publish -r",
+    "release": "turbo run build && changeset publish",
     "publish-packages": "turbo run build lint && changeset version && changeset publish"
   },
   "devDependencies": {
