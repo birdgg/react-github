@@ -13,7 +13,7 @@ export default function Page() {
       <ThemeSwitcher theme={theme} />
       <div className="my-8">
         <h2>You can use it as Server Component</h2>
-        <GithubRepo id="birdgg/react-github" />
+        <GithubRepo repo="birdgg/react-github" />
       </div>
       <div className="my-8">
         <h2>You can use it as Client Component</h2>

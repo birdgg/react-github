@@ -18,7 +18,7 @@ export const ClientRepos = () => {
         value={id}
         onChange={(e) => onChange.run(e)}
       />
-      <GithubRepo id={id} />
+      <GithubRepo repo={id} />
     </div>
   );
 };
