@@ -81,8 +81,8 @@ importers:
         specifier: ^1.9.3
         version: 1.9.3(eslint@7.32.0)
       eslint-plugin-react:
-        specifier: 7.28.0
-        version: 7.28.0(eslint@7.32.0)
+        specifier: 7.32.2
+        version: 7.32.2(eslint@7.32.0)
 
   packages/react-github:
     dependencies:
@@ -2079,29 +2079,6 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     dependencies:
       eslint: 7.32.0
-    dev: false
-
-  /eslint-plugin-react@7.28.0(eslint@7.32.0):
-    resolution: {integrity: sha512-IOlFIRHzWfEQQKcAD4iyYDndHwTQiCMcJVJjxempf203jnNLUnW34AXLrV33+nEXoifJE2ZEGmcjKPL8957eSw==}
-    engines: {node: '>=4'}
-    peerDependencies:
-      eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
-    dependencies:
-      array-includes: 3.1.6
-      array.prototype.flatmap: 1.3.1
-      doctrine: 2.1.0
-      eslint: 7.32.0
-      estraverse: 5.3.0
-      jsx-ast-utils: 3.3.3
-      minimatch: 3.1.2
-      object.entries: 1.1.6
-      object.fromentries: 2.0.6
-      object.hasown: 1.1.2
-      object.values: 1.1.6
-      prop-types: 15.8.1
-      resolve: 2.0.0-next.4
-      semver: 6.3.0
-      string.prototype.matchall: 4.0.8
     dev: false
 
   /eslint-plugin-react@7.32.2(eslint@7.32.0):
