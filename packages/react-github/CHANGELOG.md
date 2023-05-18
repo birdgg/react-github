@@ -1,5 +1,11 @@
 # @birdgg/react-github
 
+## 0.2.2
+
+### Patch Changes
+
+- b864819: fix .d.ts files not include in publish
+
 ## 0.2.1
 
 ### Patch Changes
