@@ -5,8 +5,8 @@ export interface Repo {
   name: string;
   full_name: string;
   owner: {};
-  description: string;
-  language: string;
+  description: string | null;
+  language: string | null;
   stargazers_count: number;
   forks_count: number;
 }

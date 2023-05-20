@@ -6,7 +6,8 @@ import "./theme.css";
 import { GithubContainer } from "./GithubContainer";
 import { languageColor } from "./language";
 
-function getLanuageColor(language: string) {
+function getLanuageColor(language: string | null) {
+  if (!language) return;
   return languageColor[language].color || "#000";
 }
 
@@ -32,15 +33,17 @@ export function GithubRepoEmbedded({
             {full_name}
           </a>
         </div>
-        <p className={s.description}>{description}</p>
+        <p className={s.description}>{description ?? ""}</p>
         <div className={s.footer}>
-          <span className={s.footerItem}>
-            <span
-              className={s.languageColor}
-              style={{ background: languageColor }}
-            />
-            <span>{language}</span>
-          </span>
+          {language && (
+            <span className={s.footerItem}>
+              <span
+                className={s.languageColor}
+                style={{ background: languageColor }}
+              />
+              <span>{language}</span>
+            </span>
+          )}
           <span className={s.footerItem}>
             <StarIcon size={14} />
             {stargazers_count}
