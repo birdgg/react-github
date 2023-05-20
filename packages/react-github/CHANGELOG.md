@@ -1,5 +1,11 @@
 # @birdgg/react-github
 
+## 0.2.3
+
+### Patch Changes
+
+- dcf4154: fix crash when language is null
+
 ## 0.2.2
 
 ### Patch Changes
