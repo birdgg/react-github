@@ -2,4 +2,4 @@
 "@birdgg/react-github": patch
 ---
 
-fix .d.ts files not include in publish
+fix crash when language is null
