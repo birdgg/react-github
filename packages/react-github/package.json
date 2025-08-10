@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@primer/octicons-react": "^19.1.0",
-    "clsx": "^1.2.1",
+    "clsx": "^2.0.0",
     "swr": "^2.1.5"
   }
 }
